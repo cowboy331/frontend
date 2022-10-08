@@ -1,0 +1,27 @@
+<!-- <div id="myelement" style="color:EE0000;">This is my element</div> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="'utf-8"/>
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="styles/layout.css" media="screen"/>
+    </head>
+<body>
+    <h1>Snapshots</h1>
+    <ul>
+        <li>
+            <a href="images/bridge.webp" onclick="showPic(this);return false;" title="bridge">bridge</a>
+        </li>
+        <li>
+            <a href="images/tree.webp" onclick="showPic(this);return false;" title="tree">tree</a>
+        </li>
+        <li>
+            <a href="images/sky.webp" onclick="showPic(this);return false;" title="sky">sky</a>
+        </li>
+    </ul>
+    <img id="placeholder" src="images/placeholder.jpg" alt="my image gallery" />
+    <p id="description">Choose an image.</p>
+    <script type='text/javascript' src="scripts/showPic.js"></script>
+</body>
+</html>
+
