@@ -25,16 +25,20 @@ function prepareGallery(){
 
 function showPic(whichpic) {
     if (!document.getElementById("placeholder")) return false;
-    var source=whichpic.getAttribute('href');
+    // var source=whichpic.getAttribute('href');
+    var source=whichpic.href;
     var placeholder=document.getElementById('placeholder');
     if(placeholder.nodeName!="IMG") return false;
-    placeholder.setAttribute('src',source);
-    if (document.getElementById("description")){
-        var text=whichpic.getAttribute("title");
+    // placeholder.setAttribute('src',source);
+    placeholder.src=source;
+    if (document.getElementById("description")) {
+        // var text=whichpic.getAttribute("title");
+        var text=whichpic.title;
         var description=document.getElementById("description");
-        if(description.firstChild.nodeValue==3){
-            description.firstChild.nodeValue=text;
-        }
+        // if(description.firstChild.nodeValue==3) {
+        //     description.firstChild.nodeValue=text;
+        // }
+        description.firstChild.nodeValue=text;
     }
     return true;
 }

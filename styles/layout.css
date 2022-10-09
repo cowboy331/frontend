@@ -13,17 +13,23 @@ a {
     background-color: transparent;
     font-weight: bold;
     text-decoration: none;
+    /* list-style: circle; */
 }
 u1 {
     padding: 0;
 }
 li {
     float: left;
-    padding: lem;
+    padding: 1em;
     list-style: none;
 }
 img {
     display: block;
     clear: both;
 }
-
+#imagegallery{
+    list-style: none;
+}
+#imagegallery li{
+    display: inline;
+}
