@@ -13,7 +13,7 @@ function displayCitations(){
         // 如果没有元素节点，循环继续
         if(quoteChildren.length<1) continue;
         // 取得引用中最后一个元素节点
-        var elem=quoteChildren[quoteElements.length-1];
+        var elem=quoteChildren[quoteChildren.length-1];
         // 创建标记
         var link=document.createElement("a");
         var link_text=document.createTextNode("source");
