@@ -5,7 +5,13 @@ function positionMessage(){
     elem.style.position="absolute";
     elem.style.left="50px";
     elem.style.top="100px";
-    moveElement("message",300,200,10);
+    moveElement("message",125,25,20);
+    if(!document.getElementById("message2")) return false;
+    var elem =document.getElementById("message2");
+    elem.style.position="absolute";
+    elem.style.left="50px";
+    elem.style.top="100px";
+    moveElement("message2",500,325,10);
 }
 
 addLoadEvent(positionMessage);
