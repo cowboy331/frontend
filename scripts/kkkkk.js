@@ -1,11 +1,15 @@
-function positionMessagekk() {
-    var elem=document.getElementById("message");
-    elem.style.position="absolute";
-    elem.style.left="50px";
-    elem.style.top="100px";
-    moveElement("message",200,100,10);
-}
+function prepareSlideshow() {
+    // var slideshow = document.createElement("div");
+    // slideshow.setAttribute("id", "slideshow");
+    var preview = document.createElement("img");
+    preview.setAttribute("src", "images/topics.gif");
+    preview.setAttribute("alt", "building blocks of web design");
+    preview.setAttribute("id", "preview");
+    // slideshow.appendChild(preview);
+    var list = document.getElementById("linklist");
+    // insertAfter(preview, list);
+    list.lastChild.insertBefore(preview);
+ }
 
-// window.onload=positionMessagekk;
-addLoadEvent(positionMessagekk);
-addLoadEvent(moveElement);
+addLoadEvent(prepareSlideshow);
+// addLoadEvent(moveElement);
