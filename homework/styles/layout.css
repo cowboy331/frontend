@@ -1,0 +1,7 @@
+section, header,article,nav{
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
